@@ -1,0 +1,12 @@
+<h1>Order of The Phoenix</h1>
+
+<section class="members">
+  <p>Total Members Found: <%= @members.count %></p>
+  <% @members.each do |member| %>
+    Member Name: <%= member.name %><br>
+    Role: <%= member.role %><br>
+    House: <%= member.house %><br>
+    Patronus: <%= member.patronus%><br>
+    <br>
+  <% end %>
+</section>
